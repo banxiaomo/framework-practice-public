@@ -1,4 +1,4 @@
-package com.rgl.util;
+package com.rgl.common.util;
 
 public class BaseUtil {
 

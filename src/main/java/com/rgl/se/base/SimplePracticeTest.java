@@ -3,7 +3,7 @@ package com.rgl.se.base;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-import com.rgl.util.BaseUtil;
+import com.rgl.common.util.BaseUtil;
 
 /**
  * 常规练习

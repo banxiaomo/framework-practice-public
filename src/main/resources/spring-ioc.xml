@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 
+	<bean class="com.rgl.spring.ioc.entity.YuZhen" />
+	<bean id="yuzhen1" class="com.rgl.spring.ioc.entity.YuZhen">
+		<constructor-arg name="pid" value="1" />
+	</bean>
+	<bean id="yuzhen2" class="com.rgl.spring.ioc.entity.YuZhen">
+		<constructor-arg index="0" value="1" />
+		<constructor-arg name="fullname" value="谯玉珍" />
+		<constructor-arg index="1" name="name" value="玉珍" />
+	</bean>
+ -->
+
+<!-- 
+	<bean id="shanshan1" class="com.rgl.spring.ioc.entity.ShanShan">
+		<property name="pid" value="2" />
+	</bean>
+	<bean id="shanshan2" class="com.rgl.spring.ioc.entity.ShanShan">
+		<constructor-arg index="0" value="2" />
+		<property name="fullname" value="杨允涵" />
+		<property name="yuzhen" ref="yuzhen2" />
+	</bean>
+
+ -->
+
+<!--
+	<bean id="yuzhen3" factory-method="getInstance" class="com.rgl.spring.ioc.factory.ShanShanBeanFactory">
+		<constructor-arg index="0" name="isInit" value="1" />
+	</bean>
+
+	<bean id="shanShanBeanFactory" class="com.rgl.spring.ioc.factory.ShanShanBeanFactory" />
+	<bean id="shanshan3" factory-method="getInstance" factory-bean="shanShanBeanFactory" />
+-->
+
+	<bean id="yuzhen4" class="com.rgl.spring.ioc.factory.YuZhenFactoryBean" />
+	<bean id="conn" class="com.rgl.spring.ioc.factory.ConnectionFactoryBean">
+		<property name="url" value="jdbc:mysql://localhost:3306?serverTimezone=Asia/Shanghai" />
+	</bean>
+	
+		
+
+</beans>

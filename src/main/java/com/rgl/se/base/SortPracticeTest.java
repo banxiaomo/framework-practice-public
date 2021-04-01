@@ -2,7 +2,7 @@ package com.rgl.se.base;
 
 import java.util.Random;
 
-import com.rgl.util.BaseUtil;
+import com.rgl.common.util.BaseUtil;
 
 /**
  * 排序算法
